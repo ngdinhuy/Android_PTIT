@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:hint="Email"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:hint="Ten nguoi dung"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:hint="Mat khau"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:hint="Nhap lai mat khau"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tao tai khoan"
+        android:layout_marginHorizontal="22dp"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bgr_button"
+        android:gravity="center"
+        android:layout_marginTop="22dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay ve trang chu"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+</LinearLayout>
