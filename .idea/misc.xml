@@ -5,8 +5,9 @@
       <map>
         <entry key="app/src/main/res/drawable/bgr_button.xml" value="0.1505" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/layout1.xml" value="0.44149831136067696" />
-        <entry key="app/src/main/res/layout/layout2.xml" value="0.41096700032552086" />
+        <entry key="app/src/main/res/layout/buoi_4_1.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/layout1.xml" value="0.23064931233723948" />
+        <entry key="app/src/main/res/layout/layout2.xml" value="0.3377019246419271" />
         <entry key="app/src/main/res/layout/view1.xml" value="0.2582794189453125" />
         <entry key="app/src/main/res/layout/view2.xml" value="0.2529286702473958" />
       </map>
