@@ -1,5 +1,7 @@
 package com.example.bt1
 
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import android.os.Bundle
@@ -25,6 +27,7 @@ class Bai2_Activity : AppCompatActivity(), CatItemListener, SearchView.OnQueryTe
     lateinit var recyclerView: RecyclerView
     lateinit var rvAdapter: RecycleViewAdapter
     lateinit var searchView: androidx.appcompat.widget.SearchView
+    lateinit var edtDate: EditText
     var data = ArrayList<Int>()
     var dataCats = ArrayList<CatInfo>()
     var positionUpdate:Int? = null
@@ -95,6 +98,33 @@ class Bai2_Activity : AppCompatActivity(), CatItemListener, SearchView.OnQueryTe
                 spinner.setSelection(0)
             }
         }
+
+        edtDate.setOnClickListener{
+//            val c = Calendar.getInstance()
+//            val year = c.get(Calendar.YEAR)
+//            val month = c.get(Calendar.MONTH)
+//            val day = c.get(Calendar.DAY_OF_MONTH)
+//            val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
+//
+//                // Display Selected date in textbox
+//                edtDate.text = Utils.convertStringToEditable("$dayOfMonth/${monthOfYear+1}/$year")
+//
+//            }, year, month, day)
+//            dpd.show()
+
+
+            //Timepicker Dialog
+            val mTimePicker: TimePickerDialog
+            val mcurrentTime = Calendar.getInstance()
+            val hour = mcurrentTime.get(Calendar.HOUR_OF_DAY)
+            val minute = mcurrentTime.get(Calendar.MINUTE)
+
+            mTimePicker = TimePickerDialog(this, { view, hourOfDay, minute ->
+                edtDate.text = Utils.convertStringToEditable("$hour:$minute")
+            }
+                , hour, minute, false)
+            mTimePicker.show()
+        }
     }
 
     private fun setUpdataSpinner() {
@@ -112,6 +142,7 @@ class Bai2_Activity : AppCompatActivity(), CatItemListener, SearchView.OnQueryTe
         edtDescribe = findViewById(R.id.edt3)
         recyclerView = findViewById(R.id.rvList)
         searchView = findViewById(R.id.search_view)
+        edtDate = findViewById(R.id.edt_date)
         searchView.setOnQueryTextListener(this)
     }
 
